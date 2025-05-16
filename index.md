@@ -1,4 +1,5 @@
 ---
+
 layout: post
 title: "一名软件工程专业学生的成长日记"
 date: 2023-10-10 18:30:00 +0800
@@ -20,13 +21,14 @@ tags: [自我介绍, 大学生活, 未来规划]
 
 ---
 
+
 # 🌈 我的多维宇宙
 
 ### 1. 学术折腾区
-```python
+```Python
 # 最近在写的爬虫代码片段
-import requests
-from bs4 import BeautifulSoup
+导入requests
+从bs4导入BeautifulSoup
 
 
 > **写在最后**：  
@@ -34,7 +36,7 @@ from bs4 import BeautifulSoup
 > 如果你也是大学生，欢迎一起交流摸鱼心得~
 刚用Python+MySQL开发了课表查询小工具
 
-GitHub仓库：huangqianhua
+GitHub仓库：黄秋华
 
 2. 校园生活集
 民大图书馆日落 羽毛球比赛
@@ -49,7 +51,7 @@ GitHub仓库：huangqianhua
 3. 奇趣收藏夹
 📌 教授经典语录：
 
-"这个题显然...（5分钟沉默）...我们跳过"
+这个题显然……（5分钟沉默）……我们跳过
 
 🎵 单曲循环：《晴天》- 周杰伦
 
@@ -59,10 +61,10 @@ GitHub仓库：huangqianhua
 短期任务清单
 英语六级备考（当前词汇量：约3500）
 
-LeetCode刷题突破100道（当前：47）
+LeetCode刷题突破100道（当前：47道）
 
 完成个人博客技术栈：
-graph LR
+图 LR
   A[Hexo] --> B[GitHub Pages]
   A --> C[阿里云域名]
 五年计划
@@ -97,7 +99,7 @@ graph LR
 
 ### 图片使用说明
 1. 需要上传这些图片到`/assets/images/`目录：
-   - `profile.jpg`（头像/生活照）
+   - file:///C:/Users/Administrator/AppData/Roaming/Tencent/QQ/Temp/93cc6026b2d588a3949028e47b8666c6.jpg
    - `library.jpg`（校园风景）
    - `badminton.jpg`（活动照片）
    - `wechat-qr.jpg`（微信二维码）
