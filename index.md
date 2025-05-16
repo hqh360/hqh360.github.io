@@ -28,9 +28,6 @@ tags: [自我介绍, 大学生活, 未来规划]
 import requests
 from bs4 import BeautifulSoup
 
-def crawl_classroom():
-    print("正在爬取空教室...") 
-    # 实际代码已上传GitHub
 
 > **写在最后**：  
 > 这个博客会记录我的成长踩坑史，  
@@ -38,8 +35,6 @@ def crawl_classroom():
 刚用Python+MySQL开发了课表查询小工具
 
 GitHub仓库：huangqianhua
-
-最近在CSDN写技术博客（收获15个粉丝！）
 
 2. 校园生活集
 民大图书馆日落 羽毛球比赛
