@@ -1,1 +1,162 @@
-
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>黄前华的编程日记</title>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --secondary: #1e293b;
+            --light: #f8fafc;
+            --dark: #0f172a;
+            --gray: #64748b;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', system-ui, sans-serif;
+        }
+        
+        body {
+            background-color: var(--light);
+            color: var(--dark);
+            line-height: 1.6;
+        }
+        
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+        
+        .profile {
+            display: flex;
+            gap: 2rem;
+            margin-bottom: 3rem;
+            align-items: center;
+        }
+        
+        .avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid white;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+        
+        nav a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+        
+        nav a:hover {
+            background-color: var(--primary);
+            color: white;
+        }
+        
+        .post-card {
+            background: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        
+        .post-title {
+            color: var(--secondary);
+            margin-bottom: 0.5rem;
+        }
+        
+        .post-meta {
+            color: var(--gray);
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+            display: flex;
+            gap: 1rem;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 2rem 0;
+            color: var(--gray);
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 600px) {
+            .profile {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>黄前华的编程日记</h1>
+            <p>记录技术成长与生活思考</p>
+        </div>
+    </header>
+    
+    <div class="container">
+        <section class="profile">
+            <img src="assets/images/avatar.jpg" alt="黄前华的头像" class="avatar">
+            <div>
+                <h2>关于我</h2>
+                <p>西南民族大学软件工程专业 | Python/Java开发者 | 技术博客作者</p>
+                <p>热爱编程、摄影和羽毛球</p>
+            </div>
+        </section>
+        
+        <nav>
+            <a href="#about">个人简介</a>
+            <a href="#projects">项目作品</a>
+            <a href="#blog">技术博客</a>
+            <a href="#contact">联系方式</a>
+        </nav>
+        
+        <main>
+            <article class="post-card">
+                <h3 class="post-title">我是如何用Python爬取学校空教室数据的</h3>
+                <div class="post-meta">
+                    <span>2023年10月15日</span>
+                    <span>#Python #爬虫</span>
+                </div>
+                <p>最近开发了一个查询学校空教室的小工具，使用Scrapy框架爬取教务处数据，结合Flask制作了可视化界面...</p>
+                <a href="posts/python-spider.html" style="color: var(--primary); display: inline-block; margin-top: 1rem;">阅读更多 →</a>
+            </article>
+            
+            <article class="post-card">
+                <h3 class="post-title">我的LeetCode刷题心得</h3>
+                <div class="post-meta">
+                    <span>2023年9月28日</span>
+                    <span>#算法 #面试</span>
+                </div>
+                <p>记录三个月刷题100+的经验总结，分享如何高效准备技术面试...</p>
+                <a href="posts/leetcode.html" style="color: var(--primary); display: inline-block; margin-top: 1rem;">阅读更多 →</a>
+            </article>
+      
