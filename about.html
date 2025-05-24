@@ -1,1 +1,203 @@
-
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人简介 | 黄前华的编程日记</title>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --secondary: #1e293b;
+            --light: #f8fafc;
+            --dark: #0f172a;
+            --gray: #64748b;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', system-ui, sans-serif;
+        }
+        
+        body {
+            background-color: var(--light);
+            color: var(--dark);
+            line-height: 1.6;
+        }
+        
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+        
+        .profile {
+            display: flex;
+            gap: 2rem;
+            margin-bottom: 3rem;
+            align-items: center;
+        }
+        
+        .avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid white;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+        
+        nav a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+        
+        nav a:hover {
+            background-color: var(--primary);
+            color: white;
+        }
+        
+        .section {
+            background: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        
+        h2 {
+            color: var(--secondary);
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--primary);
+        }
+        
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+        
+        .skill-tag {
+            background-color: #e0e7ff;
+            color: var(--primary);
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 2rem 0;
+            color: var(--gray);
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 600px) {
+            .profile {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>黄前华的编程日记</h1>
+            <p>记录技术成长与生活思考</p>
+        </div>
+    </header>
+    
+    <div class="container">
+        <nav>
+            <a href="index.html">首页</a>
+            <a href="about.html">个人简介</a>
+            <a href="projects.html">项目作品</a>
+            <a href="blog.html">技术博客</a>
+            <a href="contact.html">联系方式</a>
+        </nav>
+        
+        <section class="profile">
+            <img src="assets/images/avatar.jpg" alt="黄前华的头像" class="avatar">
+            <div>
+                <h2>黄前华</h2>
+                <p>西南民族大学软件工程专业 | Python/Java开发者</p>
+                <p>热爱编程、摄影和羽毛球</p>
+            </div>
+        </section>
+        
+        <div class="section">
+            <h2>关于我</h2>
+            <p>你好！我是黄前华，一名来自西南民族大学的软件工程专业学生。我对编程充满热情，尤其喜欢用代码解决实际问题。</p>
+            <p>除了编程，我还喜欢摄影和羽毛球。我相信技术应该服务于生活，所以我总是尝试将技术与我感兴趣的其他领域结合起来。</p>
+        </div>
+        
+        <div class="section">
+            <h2>教育背景</h2>
+            <p><strong>西南民族大学</strong> - 软件工程专业 (2020-2024)</p>
+            <p>主修课程：数据结构与算法、操作系统、数据库系统、计算机网络、软件工程</p>
+            <p>GPA: 3.7/4.0 | 排名: 前10%</p>
+        </div>
+        
+        <div class="section">
+            <h2>技术技能</h2>
+            <div class="skills">
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">Java</span>
+                <span class="skill-tag">HTML/CSS</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">SQL</span>
+                <span class="skill-tag">Git</span>
+                <span class="skill-tag">Flask</span>
+                <span class="skill-tag">Django</span>
+                <span class="skill-tag">Scrapy</span>
+                <span class="skill-tag">Linux</span>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>实习经历</h2>
+            <p><strong>XX科技有限公司</strong> - 软件开发实习生 (2023.07-2023.09)</p>
+            <ul>
+                <li>参与公司内部管理系统的开发，使用Python Flask框架</li>
+                <li>优化数据库查询，使系统响应速度提升30%</li>
+                <li>开发自动化测试脚本，减少人工测试时间50%</li>
+            </ul>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>© 2023 黄前华的个人博客 | 由GitHub Pages托管</p>
+            <div style="margin-top: 0.5rem;">
+                <a href="https://github.com/huangqianhua" style="color: var(--gray); margin: 0 0.5rem;">GitHub</a>
+                <a href="#" style="color: var(--gray); margin: 0 0.5rem;">知乎</a>
+                <a href="#" style="color: var(--gray); margin: 0 0.5rem;">B站</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
