@@ -1,1 +1,265 @@
-
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>校园风景 | 黄前华的编程日记</title>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --secondary: #1e293b;
+            --light: #f8fafc;
+            --dark: #0f172a;
+            --gray: #64748b;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', system-ui, sans-serif;
+        }
+        
+        body {
+            background-color: var(--light);
+            color: var(--dark);
+            line-height: 1.6;
+        }
+        
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+        
+        nav a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+        
+        nav a:hover {
+            background-color: var(--primary);
+            color: white;
+        }
+        
+        .section {
+            background: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        
+        h2 {
+            color: var(--secondary);
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--primary);
+        }
+        
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+        
+        .photo-card {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .photo-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .photo-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+        }
+        
+        .photo-info {
+            padding: 1rem;
+            background: white;
+        }
+        
+        .photo-info h3 {
+            margin-bottom: 0.5rem;
+            color: var(--secondary);
+        }
+        
+        .photo-info p {
+            color: var(--gray);
+            font-size: 0.9rem;
+        }
+        
+        .campus-intro {
+            margin-bottom: 2rem;
+            line-height: 1.8;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 2rem 0;
+            color: var(--gray);
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>西南民族大学校园风光</h1>
+            <p>用镜头记录校园的美好瞬间</p>
+        </div>
+    </header>
+    
+    <div class="container">
+        <nav>
+            <a href="index.html">首页</a>
+            <a href="about.html">个人简介</a>
+            <a href="projects.html">项目作品</a>
+            <a href="blog.html">技术博客</a>
+            <a href="campus.html">校园风景</a>
+            <a href="contact.html">联系方式</a>
+        </nav>
+        
+        <section class="section">
+            <div class="campus-intro">
+                <h2>校园简介</h2>
+                <p>西南民族大学坐落在美丽的成都市，校园环境优美，融合了现代建筑与传统文化元素。学校占地2000余亩，分为航空港校区和武侯校区，校园内绿树成荫，四季花开，是读书治学的理想园地。</p>
+                <p>作为一所民族院校，校园建筑融入了多民族文化特色，形成了独特的校园文化景观。这里不仅有现代化的教学楼和实验室，还有富有民族特色的文化广场和艺术雕塑。</p>
+            </div>
+            
+            <h2>校园风光</h2>
+            <div class="gallery">
+                <div class="photo-card">
+                    <img src="assets/images/campus1.jpg" alt="校园正门">
+                    <div class="photo-info">
+                        <h3>学校正门</h3>
+                        <p>庄重大气的校园正门，展现学校的开放与包容</p>
+                    </div>
+                </div>
+                
+                <div class="photo-card">
+                    <img src="assets/images/campus2.jpg" alt="图书馆">
+                    <div class="photo-info">
+                        <h3>图书馆</h3>
+                        <p>现代化的图书馆，藏书丰富，是学习的好去处</p>
+                    </div>
+                </div>
+                
+                <div class="photo-card">
+                    <img src="assets/images/campus3.jpg" alt="明德楼">
+                    <div class="photo-info">
+                        <h3>明德楼</h3>
+                        <p>学校的主教学楼，每天都有无数学子在此汲取知识</p>
+                    </div>
+                </div>
+                
+                <div class="photo-card">
+                    <img src="assets/images/campus4.jpg" alt="民族广场">
+                    <div class="photo-info">
+                        <h3>民族广场</h3>
+                        <p>展现多民族文化的特色广场，常有文化活动在此举办</p>
+                    </div>
+                </div>
+                
+                <div class="photo-card">
+                    <img src="assets/images/campus5.jpg" alt="校园湖景">
+                    <div class="photo-info">
+                        <h3>静思湖</h3>
+                        <p>校园内的人工湖，是师生休闲放松的好地方</p>
+                    </div>
+                </div>
+                
+                <div class="photo-card">
+                    <img src="assets/images/campus6.jpg" alt="樱花大道">
+                    <div class="photo-info">
+                        <h3>樱花大道</h3>
+                        <p>春季樱花盛开时，这里成为校园最美的风景线</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section">
+            <h2>校园四季</h2>
+            <div class="gallery">
+                <div class="photo-card">
+                    <img src="assets/images/season1.jpg" alt="校园春色">
+                    <div class="photo-info">
+                        <h3>春·生机</h3>
+                        <p>万物复苏的季节，校园里处处洋溢着生机</p>
+                    </div>
+                </div>
+                
+                <div class="photo-card">
+                    <img src="assets/images/season2.jpg" alt="校园夏景">
+                    <div class="photo-info">
+                        <h3>夏·繁茂</h3>
+                        <p>绿树成荫，为炎炎夏日带来一片清凉</p>
+                    </div>
+                </div>
+                
+                <div class="photo-card">
+                    <img src="assets/images/season3.jpg" alt="校园秋色">
+                    <div class="photo-info">
+                        <h3>秋·绚烂</h3>
+                        <p>金黄的银杏叶铺满道路，美不胜收</p>
+                    </div>
+                </div>
+                
+                <div class="photo-card">
+                    <img src="assets/images/season4.jpg" alt="校园冬景">
+                    <div class="photo-info">
+                        <h3>冬·静谧</h3>
+                        <p>银装素裹的校园别有一番韵味</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>© 2023 黄前华的个人博客 | 由GitHub Pages托管</p>
+            <div style="margin-top: 0.5rem;">
+                <a href="https://github.com/huangqianhua" style="color: var(--gray); margin: 0 0.5rem;">GitHub</a>
+                <a href="#" style="color: var(--gray); margin: 0 0.5rem;">知乎</a>
+                <a href="#" style="color: var(--gray); margin: 0 0.5rem;">B站</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
